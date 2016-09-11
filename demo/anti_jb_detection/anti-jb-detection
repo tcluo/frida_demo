@@ -1,0 +1,3 @@
+#!/bin/sh
+
+frida-trace -U -m "-[JailbreakDetectionVC isJailbroken]:" DVIA

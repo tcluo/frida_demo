@@ -34,8 +34,8 @@
      * @param {object} state - Object allowing you to keep state across function calls.
      */
     onLeave: function (log, retval, state) {
-		console.log("Function [JailbreakDetectionVC isJailbroken] originally returned:" + retval);
+		console.log("Original returned: " + retval);
 		retval.replace(0);
-		console.log("Changing the return value to:" + retval);
+		console.log("Changing the return value: " + retval);
     }
 }

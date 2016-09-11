@@ -1,8 +1,7 @@
 DVIA (Damn Vulnerable iOS App) is to provide a platform for mobile security enthusasts to test their iOS penertration testing skills in a legal environment
 
-1. frida-ps -U | grep DVIA
-2. frida-trace -U -p [pid] -m "-[JailbreakDetectionVC isJailbroken]:"
-3. modify JS
+1. frida-trace -U -m "-[JailbreakDetectionVC isJailbroken]:" DVIA
+2. modify JS
 onLeave: function (log, retval, state) {
 		console.log("Function [JailbreakDetectionVC isJailbroken] originally returned:" + retval);
 		retval.replace(0);
