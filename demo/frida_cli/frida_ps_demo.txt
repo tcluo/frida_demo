@@ -1,0 +1,3 @@
+frida-ps -U
+frida-ps -Ua
+firda-ps -Uai | more

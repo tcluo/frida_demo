@@ -1,0 +1,9 @@
+demo steps
+1. nc -l 5000
+2. ./client 127.0.0.1 and then press ENTER key to connect. Server will receive "Hello there!"
+
+3. close nc and client
+4. nc -l 5001
+5. ./client 127.0.0.1 and then press ENTER key to connect. Connection will be refused because of no server listened on 5000 port
+6. restart ./client 127.0.0.1. Before pressing ENTER key, executing structmod.py to inject malicious code to change connect destination port from 5000 to 5001.
+7. press ENTER key in client. Server will receive "Hello there!"

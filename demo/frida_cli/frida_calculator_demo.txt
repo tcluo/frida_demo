@@ -1,0 +1,2 @@
+find pid of Calculator
+Object.keys(ObjC.classes).slice(0, 10)
