@@ -2,7 +2,7 @@
 
 send({
   user: {
-    name: 'john.doe'
+    name: 'intruder'
   },
   key: '1234'
 });

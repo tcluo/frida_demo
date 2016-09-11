@@ -3,7 +3,7 @@
 let addr
 
 const f = new NativeFunction(
-    ptr(addr), 'void', ['int']);
+    Module.findExportByName(null, "f"), 'void', ['int']);
 f(1911);
 f(1911);
 f(1911);
